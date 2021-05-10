@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <title>SGPA 2018 Scheme</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      form {
+        max-width: 500px;
+        margin: auto;
+        margin-top: 40px;
+        text-align: left;
+      }
+
+      .results {
+        max-width: 40px;
+        max-height: 40px;
+        background-color:#555;
+        color: white;
+        margin: auto;
+        padding: 2px;
+        border: 1px solid black;
+      }
+      .output{
+          display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Enter your details</h1>
+    <button id="reset" class="btn btn-primary">Reset</button>
+
+    <form class="marks-form">
+      <div class="mb-3">
+        <label for="sub1" class="form-label"> 18XX51</label>
+        <input type="number" class="form-control" id="sub1" />
+      </div>
+
+      <div class="mb-3">
+        <label for="sub2" class="form-label"> 18XX52</label>
+        <input type="number" class="form-control" id="sub2" />
+      </div>
+      <div class="mb-3">
+        <label for="sub3" class="form-label"> 18XX53</label>
+        <input type="number" class="form-control" id="sub3" />
+      </div>
+
+      <div class="mb-3">
+        <label for="sub4" class="form-label"> 18XX54</label>
+        <input type="number" class="form-control" id="sub4" />
+      </div>
+
+      <div class="mb-3">
+        <label for="sub5" class="form-label"> 18XX55</label>
+        <input type="number" class="form-control" id="sub5" />
+      </div>
+
+      <div class="mb-3">
+        <label for="sub6" class="form-label"> 18XX56</label>
+        <input type="number" class="form-control" id="sub6" />
+      </div>
+
+      <div class="mb-3">
+        <label for="lab1" class="form-label"> 18XXX57</label>
+        <input type="number" class="form-control" id="lab1" />
+      </div>
+
+      <div class="mb-3">
+        <label for="lab2" class="form-label"> 18XXX58</label>
+        <input type="number" class="form-control" id="lab2" />
+      </div>
+
+      <div class="mb-3">
+        <label for="sub7" class="form-label"> 18CIV59</label>
+        <input type="number" class="form-control" id="sub7" />
+      </div>
+
+      <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="output">SGPA : <span class="results"></span></div>
+    <script src="index.js"></script>
+  </body>
+</html>
